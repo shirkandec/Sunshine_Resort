@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking - Sunshine Resort</title>
+
+    <style>
+        body {
+            background-color: lightyellow;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            color: darkgreen;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: lightgreen;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        input,
+        select {
+            width: 95%;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        hr {
+            border: 1px solid gray;
+            width: 80%;
+        }
+
+        footer {
+            background-color: #d9f2d9;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Booking</h1>
+
+    <hr>
+
+    <nav>
+        <h2>
+            <a href="Home.html">Home</a> |
+            <a href="About.html">About Us</a> |
+            <a href="Contact.html">Contact</a> |
+            <a href="Booking.html">Booking</a>
+        </h2>
+    </nav>
+
+    <hr>
+
+    <form action="#noaction" method="post">
+
+        <table>
+
+            <tr>
+                <th colspan="2">Booking Form</th>
+            </tr>
+
+            <tr>
+                <td><b>Name:</b></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Email:</b></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Check-in Date:</b></td>
+                <td><input type="date" id="checkin" name="checkin" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Check-out Date:</b></td>
+                <td><input type="date" id="checkout" name="checkout" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Number of Guests:</b></td>
+                <td><input type="number" id="guests" name="guests" min="1" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Room Type:</b></td>
+                <td>
+                    <select id="roomtype" name="roomtype" required>
+                        <option value="">Select a Room Type</option>
+                        <option value="luxury">Luxury Suite</option>
+                        <option value="beachfront">Beachfront Villa</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Book Now</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <hr>
+
+    <p>
+        Thank you for choosing Sunshine Resort! We look forward to hosting you.
+    </p>
+
+    <p>
+        For any inquiries, please contact us at
+        <a href="mailto:info@sunshineresort.com">
+            info@sunshineresort.com
+        </a>
+    </p>
+
+    <hr>
+
+    <footer>
+        <p>
+            <b>Sunshine Resort</b><br>
+            Luxury • Comfort • Relaxation
+        </p>
+
+        <p>Email: info@sunshineresort.com | Phone: +1 (123) 456-7890</p>
+
+        <p>&copy; 2026 Sunshine Resort. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

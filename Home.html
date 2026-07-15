@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sunshine Resort</title>
+
+    <style>
+        body {
+            background-color: #E0FFFF;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            color: darkgreen;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: lightyellow;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        img {
+            border: 3px solid darkgreen;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background-color: #d9f2d9;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Welcome to Sunshine Resort</h1>
+        <hr>
+
+        <header>
+            <nav>
+                <h2>
+                    <a href="Home.html">Home</a> |
+                    <a href="About.html">About Us</a> |
+                    <a href="Contact.html">Contact</a> |
+                    <a href="Booking.html">Booking</a>
+                </h2>
+            </nav>
+        </header>
+
+        <h3>
+            Experience the ultimate relaxation and luxury at Sunshine Resort.
+            Enjoy breathtaking views, luxurious rooms, delicious food, and exciting
+            adventure activities for a perfect holiday.
+        </h3>
+
+        <hr>
+
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            <img src="I1.jpeg" width="300" height="200" alt="Luxury Room">
+            <img src="I2.jpeg" width="300" height="200" alt="Swimming Pool">
+            <img src="I3.jpeg" width="300" height="200" alt="Beach View">
+            <img src="I4.jpeg" width="300" height="200" alt="Restaurant">
+        </marquee>
+
+        <br><br>
+
+        <table>
+            <tr>
+                <th>Accommodation</th>
+                <th>Facilities</th>
+                <th>Activities</th>
+            </tr>
+
+            <tr>
+                <td>Luxury Suites</td>
+                <td>Swimming Pool, Spa, Gym</td>
+                <td>Snorkeling, Kayaking</td>
+            </tr>
+
+            <tr>
+                <td>Beachfront Villas</td>
+                <td>Private Beach, Restaurant</td>
+                <td>Jet Skiing, Beach Volleyball</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>Why Choose Sunshine Resort?</h2>
+
+        <ul>
+            <li>Beautiful Beach Location</li>
+            <li>Swimming Pool & Spa</li>
+            <li>Multi-Cuisine Restaurant</li>
+            <li>Water Sports</li>
+            <li>Free Wi-Fi</li>
+            <li>24×7 Customer Service</li>
+        </ul>
+
+        <br>
+
+        <h2>
+            <a href="Booking.html">Book Your Dream Vacation Now!!!</a>
+        </h2>
+
+        <br>
+
+        <h2>Guest Reviews</h2>
+
+        <table>
+            <tr>
+                <th>Guest Name</th>
+                <th>Rating</th>
+                <th>Review</th>
+            </tr>
+
+            <tr>
+                <td>MS Dhoni</td>
+                <td>★★★★★</td>
+                <td>
+                    Amazing experience! The rooms were clean, the staff was friendly,
+                    and the beach view was breathtaking.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Virat Kohli</td>
+                <td>★★★★☆</td>
+                <td>
+                    Loved the swimming pool and spa. The food was delicious and
+                    the service was excellent.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>★★★★★</td>
+                <td>
+                    Perfect place for a family vacation. Highly recommended for
+                    anyone looking for relaxation and fun.
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <h3>Have you visited Sunshine Resort?</h3>
+
+        <form action="#" method="post">
+
+            <label><b>Your Name:</b></label><br>
+            <input type="text" size="30" required><br><br>
+
+            <label><b>Your Rating:</b></label><br>
+            <select required>
+                <option>★★★★★ Excellent</option>
+                <option>★★★★☆ Very Good</option>
+                <option>★★★☆☆ Good</option>
+                <option>★★☆☆☆ Average</option>
+                <option>★☆☆☆☆ Poor</option>
+            </select>
+
+            <br><br>
+
+            <label><b>Your Review:</b></label><br>
+            <textarea rows="5" cols="50" placeholder="Share your experience..."></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit Review">
+            <input type="reset" value="Clear">
+
+        </form>
+
+        <br>
+        <hr>
+
+        <footer>
+            <p>
+                <b>Sunshine Resort</b><br>
+                Luxury • Comfort • Relaxation
+            </p>
+
+            <p>Email: info@sunshineresort.com | Phone: +1 (123) 456-7890</p>
+
+            <p>&copy; 2026 Sunshine Resort. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
